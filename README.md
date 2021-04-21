@@ -1,0 +1,1 @@
+Just a simple template to create a .NET Core Console application which uses the ASP.Core dependency injection, logging and option components.
