@@ -2,7 +2,7 @@
 
 using System.Threading.Tasks;
 
-namespace NET_Core_Console_Template
+namespace MediaMetadataDumper
 {
     public class App
     {

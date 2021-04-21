@@ -2,11 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using NET_Core_Console_Template.Options;
-
 using System.Threading.Tasks;
 
-namespace NET_Core_Console_Template
+namespace MediaMetadataDumper
 {
     class Program
     {
@@ -38,8 +36,8 @@ namespace NET_Core_Console_Template
         {
             // Add your services
 
-            services.Configure<MyOptions>(
-                Configuration.GetSection(MyOptions.SectionName));
+            //services.Configure<MyOptions>(
+            //    Configuration.GetSection(MyOptions.SectionName));
 
             services.AddTransient<App>();
         }
