@@ -1,7 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MediaMetadataDumper.Options;
+
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
+using System;
 using System.Threading.Tasks;
 
 namespace MediaMetadataDumper
@@ -15,8 +20,12 @@ namespace MediaMetadataDumper
             var host = CreateHostBuilder()
                 .Build();
 
-            var app = host
-                .Services
+            await RunAppAsync(host.Services);
+        }
+
+        private static async Task RunAppAsync(IServiceProvider serviceProvider)
+        {
+            var app = serviceProvider
                 .GetRequiredService<App>();
 
             await app.RunAsync();
@@ -34,10 +43,10 @@ namespace MediaMetadataDumper
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            // Add your services
+            var options = new AppOptions();
+            Configuration.Bind(options);
 
-            //services.Configure<MyOptions>(
-            //    Configuration.GetSection(MyOptions.SectionName));
+            services.AddSingleton(options);
 
             services.AddTransient<App>();
         }
