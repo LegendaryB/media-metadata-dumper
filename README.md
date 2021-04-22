@@ -6,8 +6,6 @@
 
 [![GitHub license](https://img.shields.io/github/license/LegendaryB/media-metadata-dumper.svg?longCache=true&style=flat-square)](https://github.com/LegendaryB/media-metadata-dumper/blob/master/LICENSE)
 
-<br>
-<br>
 <sub>Built with ❤︎ by Daniel Belz</sub>
 </div><br>
 
