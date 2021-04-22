@@ -10,7 +10,7 @@
 </div><br>
 
 ## What is this?
-This tool runs through the files of a (media) folder and dumps metadata information related to the files using ffprobe.
+This tool runs through the files of a (media) folder and dumps metadata information related to them using ffprobe.
 
 ## Configuration
 The `appsettings.json` file resides in the same folder as the application.
@@ -48,8 +48,7 @@ The `appsettings.json` file resides in the same folder as the application.
 ## Contributing
 
 __Contributions are always welcome!__  
-When you send me a pull request with changes, improvements or bugfixes please make sure to use the pull request template. 
-I want to have all information regarding the pull request at a glance.
+When you send me a pull request with changes, improvements or bugfixes please make sure to describe what did you do and why did you do it.
 
 ## License
 
