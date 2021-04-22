@@ -9,6 +9,9 @@
 <sub>Built with ❤︎ by Daniel Belz</sub>
 </div><br>
 
+## What is this?
+This tool runs through the files of a (media) folder and dumps metadata information related to the files using ffprobe.
+
 ## Configuration
 The `appsettings.json` file resides in the same folder as the application.
 ```json
