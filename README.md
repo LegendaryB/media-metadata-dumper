@@ -14,7 +14,7 @@ The `appsettings.json` file resides in the same folder as the application.
 ```json
 {
     "directory": "",
-    "filePattern": "&ast;\&ast;",
+    "filePattern": "*.*",
     "ffprobe": {
         "path": "",
         "command": "-print_format json -show_format -show_streams"
@@ -32,7 +32,7 @@ The `appsettings.json` file resides in the same folder as the application.
 |Property   |Description   |Default value   |
 |---|---|---|
 |directory   |The path to the files which should be analysed.   |none|
-|filePattern   |A pattern used to retrieve the files which should be analysed.   |*.*|
+|filePattern   |A pattern used to retrieve the files which should be analysed.   |&ast;.&ast;|
 |ffprobe.path   |The path were the ffprobe binary is located.   |none|
 |ffprobe.command   |Command which should be run on a single file. Output is then saved to a file next to it.   |-print_format json -show_format -show_streams|
 
