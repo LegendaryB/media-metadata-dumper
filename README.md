@@ -14,7 +14,7 @@ The `appsettings.json` file resides in the same folder as the application.
 ```json
 {
     "directory": "",
-    "filePattern": "\*.\*",
+    "filePattern": "&ast;\&ast;",
     "ffprobe": {
         "path": "",
         "command": "-print_format json -show_format -show_streams"
